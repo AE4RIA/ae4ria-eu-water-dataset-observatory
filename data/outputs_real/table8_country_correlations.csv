@@ -1,0 +1,6 @@
+indicator,column,spearman_rho,p_value,n_countries
+GDP per capita (PPS),gdp_per_capita_pps,0.259,0.5,9
+DESI Score,desi_score,-0.05,0.898,9
+Water Exploitation Index,water_exploitation_index,-0.067,0.865,9
+Open Data Maturity,open_data_maturity,-0.319,0.402,9
+E-Government Usage (%),egovernment_usage_pct,0.042,0.915,9
