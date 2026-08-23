@@ -56,9 +56,9 @@ The analysis is based on **2,176 real EU water datasets** harvested via SPARQL f
 ## Key Findings
 
 - **0% operational readiness** across all three management tasks
-- **100%** of datasets lack explicit license metadata
+- **99.95%** of datasets lack explicit license metadata (2,175 of 2,176)
 - **100%** lack machine-readable format declarations
-- **48%** of curated dataset URLs are broken
+- **52%** of unique curated dataset URLs are broken (48% on the nominal count of 25 records)
 
 ## Citation
 
@@ -67,3 +67,12 @@ The analysis is based on **2,176 real EU water datasets** harvested via SPARQL f
 ## License
 
 [License to be specified]
+
+## License
+
+Code in this repository is licensed under the Apache License 2.0 (see `LICENSE`).
+Data files under `data/`, together with `Validation_Checklist.xlsx`, are licensed
+under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+Harvested metadata originates from data.europa.eu and remains subject to the terms
+of the original publishers.

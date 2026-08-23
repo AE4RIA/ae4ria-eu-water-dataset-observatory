@@ -1,0 +1,123 @@
+Phase 1 diagnostic v2 — 2026-08-22T17:36:46.176897
+Endpoint: https://data.europa.eu/sparql
+Domains: 7   Keywords: 43
+Client timeout 120s vs server execution limit 60s
+
+[floods]
+  'flood'                          COMPLETED            http=200     29.62s  rows=500
+  'hochwasser'                     COMPLETED            http=200     42.24s  rows=500
+  'inondation'                     COMPLETED            http=200     24.07s  rows=500
+  'inundación'                     COMPLETED            http=200     28.47s  rows=500
+  'flood hazard'                   HTTP_ERROR           http=504     56.90s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'flood risk'                     CLIENT_TIMEOUT       http=-      120.65s  rows=
+      detail: no response within 120s
+  'flood forecast'                 CLIENT_TIMEOUT       http=-      120.79s  rows=
+      detail: no response within 120s
+  'flooding areas'                 HTTP_ERROR           http=504     56.76s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+
+[water_quality]
+  'water quality'                  CLIENT_TIMEOUT       http=-      120.64s  rows=
+      detail: no response within 120s
+  'bathing water'                  HTTP_ERROR           http=504    113.61s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'surface water quality'          CLIENT_TIMEOUT       http=-      120.63s  rows=
+      detail: no response within 120s
+  'drinking water quality'         HTTP_ERROR           http=504    113.66s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'water monitoring'               HTTP_ERROR           http=504     56.82s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'waterbase'                      HTTP_ERROR           http=504     56.64s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'biological quality'             HTTP_ERROR           http=504     55.68s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'chemical status'                HTTP_ERROR           http=504     55.66s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+
+[groundwater]
+  'groundwater'                    COMPLETED            http=200     34.75s  rows=500
+  'grundwasser'                    COMPLETED            http=200     33.42s  rows=500
+  'aquifer'                        CLIENT_TIMEOUT       http=-      120.11s  rows=
+      detail: no response within 120s
+  'groundwater level'              HTTP_ERROR           http=504     55.91s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'groundwater body'               CLIENT_TIMEOUT       http=-      120.17s  rows=
+      detail: no response within 120s
+
+[wfd_metrics]
+  'water framework directive'      CLIENT_TIMEOUT       http=-      120.16s  rows=
+      detail: no response within 120s
+  'ecological status'              CLIENT_TIMEOUT       http=-      120.19s  rows=
+      detail: no response within 120s
+  'river basin management'         CLIENT_TIMEOUT       http=-      120.23s  rows=
+      detail: no response within 120s
+  'water body status'              HTTP_ERROR           http=504     56.09s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'river basin district'           CLIENT_TIMEOUT       http=-      120.22s  rows=
+      detail: no response within 120s
+
+[utilities]
+  'water supply'                   CLIENT_TIMEOUT       http=-      120.26s  rows=
+      detail: no response within 120s
+  'wastewater treatment'           HTTP_ERROR           http=504     55.66s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'drinking water'                 CLIENT_TIMEOUT       http=-      120.17s  rows=
+      detail: no response within 120s
+  'water services'                 HTTP_ERROR           http=504     55.57s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'sewage treatment'               CLIENT_TIMEOUT       http=-      120.16s  rows=
+      detail: no response within 120s
+  'urban wastewater'               HTTP_ERROR           http=504     56.01s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+
+[agricultural_runoff]
+  'nitrate water'                  HTTP_ERROR           http=504     55.96s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'pesticide water'                CLIENT_TIMEOUT       http=-      120.22s  rows=
+      detail: no response within 120s
+  'agricultural water'             HTTP_ERROR           http=504    110.80s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'diffuse pollution'              HTTP_ERROR           http=504     55.13s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'nutrient loading water'         CLIENT_TIMEOUT       http=-      120.19s  rows=
+      detail: no response within 120s
+
+[cross_cutting]
+  'hydrological data'              CLIENT_TIMEOUT       http=-      120.21s  rows=
+      detail: no response within 120s
+  'water resources'                CLIENT_TIMEOUT       http=-      120.24s  rows=
+      detail: no response within 120s
+  'copernicus water'               CLIENT_TIMEOUT       http=-      120.09s  rows=
+      detail: no response within 120s
+  'satellite water'                HTTP_ERROR           http=504    113.14s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'remote sensing water'           HTTP_ERROR           http=504     56.58s  rows=
+      detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  'climate water'                  CLIENT_TIMEOUT       http=-      120.18s  rows=
+      detail: no response within 120s
+
+======================================================================
+PER-DOMAIN ROLL-UP (raw counts, no cross-domain deduplication)
+======================================================================
+  floods                 raw_rows=2000   CLIENT_TIMEOUT=2 COMPLETED=4 HTTP_ERROR=2
+  water_quality          raw_rows=0      CLIENT_TIMEOUT=2 HTTP_ERROR=6
+  groundwater            raw_rows=1000   CLIENT_TIMEOUT=2 COMPLETED=2 HTTP_ERROR=1
+  wfd_metrics            raw_rows=0      CLIENT_TIMEOUT=4 HTTP_ERROR=1
+  utilities              raw_rows=0      CLIENT_TIMEOUT=3 HTTP_ERROR=3
+  agricultural_runoff    raw_rows=0      CLIENT_TIMEOUT=2 HTTP_ERROR=3
+  cross_cutting          raw_rows=0      CLIENT_TIMEOUT=4 HTTP_ERROR=2
+
+Written: phase1_diagnostic_20260822T173646.csv
+
+HOW TO READ THIS:
+  COMPLETED_EMPTY on every keyword of a domain
+      -> 'returned no records' is supportable for THIS run, on
+         this date. It says nothing about 2026-03-18.
+  EXEC_LIMIT_REJECTED on any keyword
+      -> that domain's null cannot be read as absence; add query
+         execution failure as a fourth cause in Section 3.1.
+  COMPLETED with raw_rows > 0 in a domain originally reported empty
+      -> the original zero came from first-seen dedup in
+         uri_to_domain, not from the endpoint. This would also make
+         the 1,477 / 699 split an artefact of iteration order.

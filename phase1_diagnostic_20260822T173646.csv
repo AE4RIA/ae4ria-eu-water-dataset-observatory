@@ -1,0 +1,44 @@
+run_started,domain,keyword,outcome,http_status,elapsed_s,n_rows,detail
+2026-08-22T17:36:46.176897,floods,flood,COMPLETED,200,29.62,500,
+2026-08-22T17:36:46.176897,floods,hochwasser,COMPLETED,200,42.24,500,
+2026-08-22T17:36:46.176897,floods,inondation,COMPLETED,200,24.07,500,
+2026-08-22T17:36:46.176897,floods,inundación,COMPLETED,200,28.47,500,
+2026-08-22T17:36:46.176897,floods,flood hazard,HTTP_ERROR,504,56.9,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,floods,flood risk,CLIENT_TIMEOUT,,120.65,,no response within 120s
+2026-08-22T17:36:46.176897,floods,flood forecast,CLIENT_TIMEOUT,,120.79,,no response within 120s
+2026-08-22T17:36:46.176897,floods,flooding areas,HTTP_ERROR,504,56.76,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,water_quality,water quality,CLIENT_TIMEOUT,,120.64,,no response within 120s
+2026-08-22T17:36:46.176897,water_quality,bathing water,HTTP_ERROR,504,113.61,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,water_quality,surface water quality,CLIENT_TIMEOUT,,120.63,,no response within 120s
+2026-08-22T17:36:46.176897,water_quality,drinking water quality,HTTP_ERROR,504,113.66,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,water_quality,water monitoring,HTTP_ERROR,504,56.82,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,water_quality,waterbase,HTTP_ERROR,504,56.64,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,water_quality,biological quality,HTTP_ERROR,504,55.68,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,water_quality,chemical status,HTTP_ERROR,504,55.66,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,groundwater,groundwater,COMPLETED,200,34.75,500,
+2026-08-22T17:36:46.176897,groundwater,grundwasser,COMPLETED,200,33.42,500,
+2026-08-22T17:36:46.176897,groundwater,aquifer,CLIENT_TIMEOUT,,120.11,,no response within 120s
+2026-08-22T17:36:46.176897,groundwater,groundwater level,HTTP_ERROR,504,55.91,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,groundwater,groundwater body,CLIENT_TIMEOUT,,120.17,,no response within 120s
+2026-08-22T17:36:46.176897,wfd_metrics,water framework directive,CLIENT_TIMEOUT,,120.16,,no response within 120s
+2026-08-22T17:36:46.176897,wfd_metrics,ecological status,CLIENT_TIMEOUT,,120.19,,no response within 120s
+2026-08-22T17:36:46.176897,wfd_metrics,river basin management,CLIENT_TIMEOUT,,120.23,,no response within 120s
+2026-08-22T17:36:46.176897,wfd_metrics,water body status,HTTP_ERROR,504,56.09,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,wfd_metrics,river basin district,CLIENT_TIMEOUT,,120.22,,no response within 120s
+2026-08-22T17:36:46.176897,utilities,water supply,CLIENT_TIMEOUT,,120.26,,no response within 120s
+2026-08-22T17:36:46.176897,utilities,wastewater treatment,HTTP_ERROR,504,55.66,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,utilities,drinking water,CLIENT_TIMEOUT,,120.17,,no response within 120s
+2026-08-22T17:36:46.176897,utilities,water services,HTTP_ERROR,504,55.57,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,utilities,sewage treatment,CLIENT_TIMEOUT,,120.16,,no response within 120s
+2026-08-22T17:36:46.176897,utilities,urban wastewater,HTTP_ERROR,504,56.01,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,agricultural_runoff,nitrate water,HTTP_ERROR,504,55.96,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,agricultural_runoff,pesticide water,CLIENT_TIMEOUT,,120.22,,no response within 120s
+2026-08-22T17:36:46.176897,agricultural_runoff,agricultural water,HTTP_ERROR,504,110.8,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,agricultural_runoff,diffuse pollution,HTTP_ERROR,504,55.13,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,agricultural_runoff,nutrient loading water,CLIENT_TIMEOUT,,120.19,,no response within 120s
+2026-08-22T17:36:46.176897,cross_cutting,hydrological data,CLIENT_TIMEOUT,,120.21,,no response within 120s
+2026-08-22T17:36:46.176897,cross_cutting,water resources,CLIENT_TIMEOUT,,120.24,,no response within 120s
+2026-08-22T17:36:46.176897,cross_cutting,copernicus water,CLIENT_TIMEOUT,,120.09,,no response within 120s
+2026-08-22T17:36:46.176897,cross_cutting,satellite water,HTTP_ERROR,504,113.14,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,cross_cutting,remote sensing water,HTTP_ERROR,504,56.58,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-22T17:36:46.176897,cross_cutting,climate water,CLIENT_TIMEOUT,,120.18,,no response within 120s
