@@ -1,3 +1,79 @@
+> ## Correction notice — 23 August 2026
+>
+> **The "discovery gap" for nature-based solutions reported in this document is
+> withdrawn.** It was not established by the March 2026 harvest and is not
+> supported by subsequent testing.
+>
+> ### What the March run could and could not record
+>
+> `phase1_get_uris_combined()` in `src/harvest_climate.py` cannot distinguish a
+> failed query from an empty one. Its three strategies — a combined OR query over
+> all keywords, then OR queries over batches of five, then one query per keyword —
+> each treat a `None` return as "nothing found" and fall through to the next. If
+> every strategy fails, the function returns an empty list, which `main()` records
+> as `new == 0` and appends to `zero_result_domains`. That is the same state a
+> genuinely empty catalogue would produce.
+>
+> The two client timeouts used (50 s for combined and batch queries, 45 s for
+> individual ones) both sit below the endpoint's 60 s server-side execution limit,
+> so the client aborted before the server could return a catchable status.
+>
+> ### What re-execution shows
+>
+> All 27 queries in the nature-based-solutions cascade were re-run on
+> 23 August 2026 with a 120 s client timeout
+> (`diagnose_climate_phase1_v2.py`, `climate_phase1_diagnostic_20260823T125440.csv`):
+>
+> | Keyword set | Queries | HTTP 504 | No response in 120 s | Completed | Empty result sets |
+> |---|---|---|---|---|---|
+> | Primary (14 keywords) | 18 | 8 | 10 | 0 | **0** |
+> | Fallback (6 keywords) | 9 | 6 | 3 | 0 | **0** |
+>
+> Not one query returned a result set of any kind, empty or otherwise. Every
+> outcome was a gateway timeout or a non-response.
+>
+> ### What this means
+>
+> The absence of nature-based-solutions records in `climate_harvest.csv` is an
+> outcome of query execution against the federated endpoint. It is not evidence
+> that such datasets are absent from, or structurally invisible within,
+> data.europa.eu, and the statements below asserting otherwise should not be
+> relied upon. In particular:
+>
+> - "The discovery gap is a structural limitation of the federated catalogue, not
+>   an absence of NbS data" — not established; our design cannot distinguish these.
+> - "Nature-based solutions datasets exist within data.europa.eu but cannot be
+>   retrieved" — the second clause describes our queries, not the catalogue.
+> - "This is consistent with the original paper's finding that 5/7 water domains
+>   returned zero results" — that finding has itself been withdrawn. An audit of
+>   the water harvest established that those five domains failed at the endpoint
+>   rather than returning empty sets, and that records the failing queries were
+>   intended to retrieve are present in the deposited corpus under a different
+>   domain label. See the Harvest audit section of the repository README.
+> - "This is a scientific finding, not a pipeline failure" — printed by code that
+>   cannot observe the difference.
+>
+> ### Note on endpoint condition
+>
+> Response behaviour varies substantially between runs. Six water-domain queries
+> completed in 24–42 s on 22 August 2026; on 23 August, queries of comparable
+> shape returned 504 at ~59 s or failed to respond within 120 s. Retrieval success
+> against this endpoint is a function of load at the time of querying, not of
+> catalogue content, and any null result should be interpreted accordingly.
+>
+> ### Status
+>
+> The drought_early_warning and climate_infrastructure domains have not been
+> re-audited. Their reported counts (500 and 494) each sit at the 500-URI query
+> ceiling, so both are truncated samples rather than complete retrievals. Figures
+> in this document that derive from the harvested records remain as computed; the
+> non-discovery interpretation does not.
+>
+> To reproduce:
+> ```
+> python3 diagnose_climate_phase1_v2.py --domain nature_based_solutions --fallback
+> ```
+
 # Climate Adaptation Readiness Extension — Analysis Report
 
 **Date:** 2026-03-25
@@ -312,4 +388,4 @@ All files produced by this pipeline:
 ---
 *Report generated automatically by the EU Water Dataset Observatory climate pipeline.*
 *Every number in this report is derived from a computation on real SPARQL harvest data.*
-*No values have been fabricated, simulated, or interpolated.*
+*All figures are computed from the harvested records. See the correction notice at the top of this document regarding the interpretation of non-discovery.*
