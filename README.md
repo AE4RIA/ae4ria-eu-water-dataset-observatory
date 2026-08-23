@@ -61,12 +61,7 @@ The analysis is based on **2,176 real EU water datasets** harvested via SPARQL f
 - **52%** of unique curated dataset URLs are broken (48% on the nominal count of 25 records)
 
 ## Citation
-
 [Paper citation to be added after publication]
-
-## License
-
-[License to be specified]
 
 ## License
 
