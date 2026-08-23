@@ -1,0 +1,86 @@
+Climate Phase 1 diagnostic v2 — 2026-08-23T12:54:40.220535
+Endpoint: https://data.europa.eu/sparql
+Client timeout 120s (harvest_climate.py used 50s / 45s, both below the 60s server limit)
+Domains: ['nature_based_solutions']
+
+  [nature_based_solutions] primary: 14 keywords
+    combined     all 14 keywords                    HTTP_ERROR           http=504     60.29s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    batch        [0:5] 5 kws                        HTTP_ERROR           http=504     59.73s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    batch        [5:10] 5 kws                       HTTP_ERROR           http=504     60.29s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    batch        [10:15] 4 kws                      CLIENT_TIMEOUT       http=-      120.10s  rows=
+        detail: no response within 120s
+    individual   'nature-based solution'            CLIENT_TIMEOUT       http=-      120.29s  rows=
+        detail: no response within 120s
+    individual   'natural water retention'          CLIENT_TIMEOUT       http=-      120.17s  rows=
+        detail: no response within 120s
+    individual   'wetland restoration'              CLIENT_TIMEOUT       http=-      120.16s  rows=
+        detail: no response within 120s
+    individual   'green infrastructure'             HTTP_ERROR           http=504    120.13s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    individual   'ecosystem-based'                  CLIENT_TIMEOUT       http=-      120.28s  rows=
+        detail: no response within 120s
+    individual   'floodplain restoration'           CLIENT_TIMEOUT       http=-      120.26s  rows=
+        detail: no response within 120s
+    individual   'biodiversity water'               CLIENT_TIMEOUT       http=-      120.17s  rows=
+        detail: no response within 120s
+    individual   'ecological status'                HTTP_ERROR           http=504    120.18s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    individual   'river restoration'                CLIENT_TIMEOUT       http=-      120.17s  rows=
+        detail: no response within 120s
+    individual   'nature restoration'               CLIENT_TIMEOUT       http=-      120.19s  rows=
+        detail: no response within 120s
+    individual   'natural flood management'         CLIENT_TIMEOUT       http=-      120.19s  rows=
+        detail: no response within 120s
+    individual   'rewilding'                        HTTP_ERROR           http=504    119.77s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    individual   'constructed wetland'              HTTP_ERROR           http=504    119.52s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    individual   'riparian buffer'                  HTTP_ERROR           http=504    119.91s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+  [nature_based_solutions] fallback: 6 keywords
+    combined     all 6 keywords                     HTTP_ERROR           http=504    119.68s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    batch        [0:5] 5 kws                        CLIENT_TIMEOUT       http=-      120.23s  rows=
+        detail: no response within 120s
+    batch        [5:10] 1 kws                       CLIENT_TIMEOUT       http=-      120.25s  rows=
+        detail: no response within 120s
+    individual   'wetland'                          HTTP_ERROR           http=504     59.30s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    individual   'natural flood'                    HTTP_ERROR           http=504    118.37s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    individual   'ecosystem restoration'            HTTP_ERROR           http=504    118.30s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    individual   'riparian'                         CLIENT_TIMEOUT       http=-      120.29s  rows=
+        detail: no response within 120s
+    individual   'floodplain'                       HTTP_ERROR           http=504    117.97s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+    individual   'ecological restoration'           HTTP_ERROR           http=504     59.12s  rows=
+        detail: <html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+
+==============================================================================
+ROLL-UP BY DOMAIN AND KEYWORD SET
+==============================================================================
+  nature_based_solutions / primary: 18 queries
+    CLIENT_TIMEOUT=10  HTTP_ERROR=8
+    queries returning rows: 0   confirmed empty: 0   max rows seen: 0
+  nature_based_solutions / fallback: 9 queries
+    CLIENT_TIMEOUT=3  HTTP_ERROR=6
+    queries returning rows: 0   confirmed empty: 0   max rows seen: 0
+
+Written: /root/my_projects/EUWaterDatasetObservatory/climate_phase1_diagnostic_20260823T125440.csv
+
+HOW TO READ THIS
+  Every query COMPLETED_EMPTY across primary and fallback
+     -> the domain genuinely returns nothing for these terms, on this
+        date. The CLIMATE_ADAPTATION_REPORT.md wording can stand, but
+        must be scoped to this run rather than stated as structural.
+  Any HTTP_ERROR / CLIENT_TIMEOUT / EXEC_LIMIT_REJECTED
+     -> the null is a query-execution outcome, not an absence. The
+        'structural invisibility' claim must be withdrawn, exactly as
+        the five water domains' 'returned zero results' was.
+  Any COMPLETED with rows > 0
+     -> the datasets exist and were retrievable; the March run simply
+        failed to reach them within its 50s/45s timeouts.

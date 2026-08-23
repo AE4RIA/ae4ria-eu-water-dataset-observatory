@@ -1,0 +1,28 @@
+run_started,domain,keyword_set,strategy,label,n_keywords,outcome,http_status,elapsed_s,n_rows,detail
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,combined,all 14 keywords,14,HTTP_ERROR,504,60.29,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,batch,[0:5] 5 kws,5,HTTP_ERROR,504,59.73,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,batch,[5:10] 5 kws,5,HTTP_ERROR,504,60.29,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,batch,[10:15] 4 kws,4,CLIENT_TIMEOUT,,120.1,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'nature-based solution',1,CLIENT_TIMEOUT,,120.29,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'natural water retention',1,CLIENT_TIMEOUT,,120.17,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'wetland restoration',1,CLIENT_TIMEOUT,,120.16,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'green infrastructure',1,HTTP_ERROR,504,120.13,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'ecosystem-based',1,CLIENT_TIMEOUT,,120.28,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'floodplain restoration',1,CLIENT_TIMEOUT,,120.26,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'biodiversity water',1,CLIENT_TIMEOUT,,120.17,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'ecological status',1,HTTP_ERROR,504,120.18,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'river restoration',1,CLIENT_TIMEOUT,,120.17,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'nature restoration',1,CLIENT_TIMEOUT,,120.19,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'natural flood management',1,CLIENT_TIMEOUT,,120.19,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'rewilding',1,HTTP_ERROR,504,119.77,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'constructed wetland',1,HTTP_ERROR,504,119.52,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,primary,individual,'riparian buffer',1,HTTP_ERROR,504,119.91,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,combined,all 6 keywords,6,HTTP_ERROR,504,119.68,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,batch,[0:5] 5 kws,5,CLIENT_TIMEOUT,,120.23,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,batch,[5:10] 1 kws,1,CLIENT_TIMEOUT,,120.25,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,individual,'wetland',1,HTTP_ERROR,504,59.3,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,individual,'natural flood',1,HTTP_ERROR,504,118.37,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,individual,'ecosystem restoration',1,HTTP_ERROR,504,118.3,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,individual,'riparian',1,CLIENT_TIMEOUT,,120.29,,no response within 120s
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,individual,'floodplain',1,HTTP_ERROR,504,117.97,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
+2026-08-23T12:54:40.220535,nature_based_solutions,fallback,individual,'ecological restoration',1,HTTP_ERROR,504,59.12,,<html>  <head><title>504 Gateway Time-out</title></head>  <body>  <center><h1>504 Gateway Time-out</h1></center>  </body>  </html>  
