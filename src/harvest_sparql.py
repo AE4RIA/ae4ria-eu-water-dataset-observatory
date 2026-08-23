@@ -18,6 +18,10 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
+
+# Repository root, so the scripts run from any clone location.
+ROOT = Path(__file__).resolve().parents[1]
+
 SPARQL_ENDPOINT = "https://data.europa.eu/sparql"
 HEADERS = {
     "Accept":     "application/sparql-results+json",
@@ -339,7 +343,7 @@ def main():
     df = enrich(df)
 
     # ── Save ──────────────────────────────────────────────────────────────────
-    out_dir = Path("/root/my_projects/EUWaterDatasetObservatory/data/harvested")
+    out_dir = ROOT / "data/harvested"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     df.to_csv(out_dir / "raw_harvest.csv", index=False)

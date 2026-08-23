@@ -20,6 +20,10 @@ from sensitivity_analysis import run_sensitivity_analysis
 from impact_proxy import compute_impact, compute_priority
 
 
+
+# Repository root, so the scripts run from any clone location.
+ROOT = Path(__file__).resolve().parents[1]
+
 # ─── Column-mapping helpers ───────────────────────────────────────────────────
 
 def _parse_date_to_str(date_val):
@@ -322,8 +326,8 @@ def prepare_harvested_data(harvest_path):
 def main():
     """Run full scoring and analysis pipeline on harvested data."""
 
-    harvest_path = Path("/root/my_projects/EUWaterDatasetObservatory/data/harvested/raw_harvest.csv")
-    output_dir   = Path("/root/my_projects/EUWaterDatasetObservatory/data/outputs_real")
+    harvest_path = ROOT / "data/harvested/raw_harvest.csv"
+    output_dir   = ROOT / "data/outputs_real"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     if not harvest_path.exists():
